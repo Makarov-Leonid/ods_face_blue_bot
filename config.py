@@ -1,0 +1,1 @@
+result_storage_path = 'temp'

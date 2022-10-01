@@ -3,11 +3,8 @@ import os
 import cv2
 import matplotlib.pyplot as plt
 
-from dotenv import load_dotenv
+from config import result_storage_path
 
-
-load_dotenv(dotenv_path='.env')
-result_storage_path = os.environ.get("result_storage_path")
 
 def blur_image(detector, filepath, filename):
     image_name_new = "handled_image_" + filename

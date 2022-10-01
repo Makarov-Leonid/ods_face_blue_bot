@@ -5,12 +5,13 @@ import telebot
 
 from dotenv import load_dotenv
 
+from config import result_storage_path
 from init import init
 from recognition import blur_image
 
 load_dotenv(dotenv_path='.env')
-result_storage_path = os.environ.get("result_storage_path")
 TOKEN = os.environ.get("TOKEN")
+
 bot = telebot.TeleBot(TOKEN)
 detector = init()
 

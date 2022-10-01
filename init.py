@@ -1,13 +1,8 @@
 import os
 
-from dotenv import load_dotenv
-
-
+from config import result_storage_path
 from detector import neural_network
 
-
-load_dotenv(dotenv_path='.env')
-result_storage_path = os.environ.get("result_storage_path")
 
 def init():
     if not os.path.exists(result_storage_path):
