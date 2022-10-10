@@ -1,4 +1,6 @@
 # ods_face_blue_bot
-education project.
 
-Для работы нужно дабавить переменную среды TOKEN, или .env файл с TOKEN для telegram бота.
+
+Telegram bot to blur faces in photos sent to the bot.
+
+To work, you need to add the TOKEN environment variable, or .env file with TOKEN for the telegram bot. Use docker to run the project.
